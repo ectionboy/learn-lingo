@@ -3,9 +3,10 @@ import styled from 'styled-components';
 export const ContainerStyled = styled.div`
   max-width: 1440px;
   margin: 0 auto;
-  padding: 30px 75px; /* others 30px 10px */
+  padding: 20px 75px; 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 
 export const LogoContainer = styled.div`
