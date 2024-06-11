@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import icons from 'icons.svg';
-import { ContainerStyled, LogoContainer } from './Header.styled';
+import { ContainerStyled, LogoContainer, NavList } from './Header.styled';
 
 const Header = () => {
   return (
@@ -17,7 +17,7 @@ const Header = () => {
         </Link>
 
         <nav>
-          <ul>
+          <NavList>
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -29,7 +29,7 @@ const Header = () => {
             <li>
               <Link to="/favorites">Favorites</Link>
             </li>
-          </ul>
+          </NavList>
         </nav>
         <div>
           <ul>
