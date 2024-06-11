@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import icons from 'icons.svg';
-import { ContainerStyled, LogoContainer, NavList } from './Header.styled';
+import { AuthList, ContainerStyled, LoginElement, LogoContainer, NavList, RegistrationElement } from './Header.styled';
 
 const Header = () => {
   return (
@@ -32,19 +32,19 @@ const Header = () => {
           </NavList>
         </nav>
         <div>
-          <ul>
-            <li>
+          <AuthList>
+            <LoginElement>
               <Link to="/">
                 <svg width={'20px'} height={'20px'}>
                   <use href={`${icons}#icon-log-in`}></use>
                 </svg>
                 Log in
               </Link>
-            </li>
-            <li>
+            </LoginElement>
+            <RegistrationElement>
               <Link to="/">Registration</Link>
-            </li>
-          </ul>
+            </RegistrationElement>
+          </AuthList>
         </div>
       </ContainerStyled>
     </header>

@@ -28,3 +28,32 @@ export const NavList = styled.ul`
   line-height: 1.25;
   color: #121417;
 `;
+
+export const AuthList = styled.ul`
+  display: flex;
+  align-items: center;
+  gap: 16px;
+`;
+export const LoginElement = styled.li`
+  a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #121417;
+  }
+`;
+
+export const RegistrationElement = styled.li`
+  a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #fff;
+    border-radius: 12px;
+    padding: 14px 40px;
+    background-color: #121417;
+  }
+`;
